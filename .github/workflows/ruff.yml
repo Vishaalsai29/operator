@@ -1,35 +1,13 @@
-name: Code Quality and Tests
+# Ruff checks for good code style
 
-on:
-  pull_request:
-    branches: [ main ]
-  push:
-    branches: [ main ]
-
+name: Ruff
+on: [push, pull_request]
 jobs:
-  code-quality:
+  ruff:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: astral-sh/ruff-action@v1
         with:
-          python-version: '3.10'
-          
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install black isort
-          
-      - name: Check Black formatting
-        run: black . --check
-        
-      - name: Check Import sorting
-        run: isort . --check-only --diff
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          #Affects only changed files
+          changed-files: "true"
