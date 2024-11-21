@@ -1,0 +1,2 @@
+# Example file for .env - copy this file as .env and set the values as needed.
+DSBA_LLAMA3_KEY=<YOUR_DSBA_LLAMA3_KEY>
