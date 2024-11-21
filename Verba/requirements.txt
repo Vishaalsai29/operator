@@ -1,0 +1,1 @@
+goldenverba[huggingface]==2.0.0
