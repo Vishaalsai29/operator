@@ -1,0 +1,23 @@
+[
+    {
+        "class": "CreditComplaints",
+        "properties": {
+            "question": "What are the top complaint categories for Wells Fargo?",
+            "answer": "The top complaint categories for Wells Fargo include Checking account, General-purpose credit card or charge card and Credit reporting."
+        }
+    },
+    {
+        "class": "CreditComplaints",
+        "properties": {
+            "question": "What percentage of complaints about Bank of America were resolved?",
+            "answer": "Approximately 76% of complaints about Bank of America were resolved."
+        }
+    },
+    {
+        "class": "CreditComplaints",
+        "properties": {
+            "question": "How many complaints were filed in June 2024 for Wells Fargo?",
+            "answer": "There were 64 complaints filed in June 2024 for Wells Fargo."
+        }
+    }
+]
