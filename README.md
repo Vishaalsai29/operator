@@ -44,3 +44,6 @@ This project maintains high code quality standards through automated tools for f
 - **Dev Notebooks**  
   A collection of development and testing notebooks designed for preprocessing, querying, and evaluating the RAG system's performance.
 
+### [Contribute](documents/guide_to_contribute.md)
+
+
