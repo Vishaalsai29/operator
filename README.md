@@ -28,7 +28,7 @@ This project maintains high code quality standards through automated tools for f
 
 ### 🧭 System Diagram
 
-<img width="800" alt="Preprocessing Architecture" src="documents\Preprocessing_Image.svg">
+<img width="800" alt="Preprocessing_Image" src="documents\Preprocessing_Image.svg">
 
 ### 🔑 Key Components
 
