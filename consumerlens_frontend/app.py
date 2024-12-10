@@ -57,11 +57,36 @@ try:
 except Exception as e:
     st.sidebar.error(f"Error connecting to Weaviate: {e}")
 
+<<<<<<< Updated upstream
 # Sample OpenAI API Request
 if "openai_key" in st.session_state:
     st.subheader("Test OpenAI GPT Request")
     user_input = st.text_input("Enter your prompt")
     if st.button("Send"):
+=======
+# Title and Description
+st.title("Consumer Lens 🌟")
+st.markdown(
+    """
+    **Empowering Consumer Protection**  
+    Analyze and understand consumer complaints using Retrieval-Augmented Generation (RAG).  
+    Upload datasets, query trends, and gain actionable insights with ease.  
+    """
+)
+
+## Sidebar Navigation
+menu = ["Query Complaints", "Upload Dataset", "Visualize Insights"]
+choice = st.sidebar.selectbox("Menu", menu)
+
+# Function: Retrieve Context from Weaviate__
+def retrieve_context(query, class_name="VERBA_Embedding_text_embedding", limit=5):
+    try:
+        if not client:
+            st.error("Weaviate client not initialized. Check the connection.")
+            return []
+
+        # Generate embedding from OpenAI
+>>>>>>> Stashed changes
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-4",
